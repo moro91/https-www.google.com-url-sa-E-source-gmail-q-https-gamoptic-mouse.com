@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamoptic.Mouse | مرجع تخصصی و مقایسه انواع موس‌های گیمینگ</title>
+    
+    <!-- Meta tags for Gamoptic.Mouse -->
+    <meta name="description" content="Gamoptic.Mouse - مرجع تخصصی معرفی و مقایسه انواع موس‌های گیمینگ سبک‌وزن، بی‌سیم، ارگونومیک، MMO و اقتصادی">
+    <meta property="og:title" content="Gamoptic.Mouse - راهنمای جامع موس‌های گیمینگ">
+    <meta property="og:url" content="https://gamoptic-mouse.com">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#090a0f',
+                        cardBg: 'rgba(18, 22, 36, 0.75)',
+                        neonCyan: '#00f3ff',
+                        neonPurple: '#a855f7',
+                        neonPink: '#ff007f',
+                        neonGreen: '#10b981',
+                    },
+                    fontFamily: {
+                        vazir: ['Vazirmatn', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'glow-cyan': '0 0 20px rgba(0, 243, 255, 0.35)',
+                        'glow-purple': '0 0 20px rgba(168, 85, 247, 0.35)',
+                        'glow-pink': '0 0 20px rgba(255, 0, 127, 0.35)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Vazirmatn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #08090d;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism styling */
+        .glass-panel {
+            background: rgba(18, 22, 36, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card {
+            background: rgba(22, 28, 45, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(0, 243, 255, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(0, 243, 255, 0.3);
+        }
+
+        /* Ambient Animated RGB Background Gradients */
+        .rgb-blob {
+            position: absolute;
+            filter: blur(90px);
+            opacity: 0.22;
+            border-radius: 50%;
+            z-index: 0;
+            pointer-events: none;
+            animation: floatBlob 12s infinite alternate ease-in-out;
+        }
+
+        @keyframes floatBlob {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(60px, 40px) scale(1.15); }
+            100% { transform: translate(-40px, 80px) scale(0.9); }
+        }
+
+        /* Text gradient effect */
+        .rgb-text {
+            background: linear-gradient(135deg, #00f3ff 0%, #a855f7 50%, #ff007f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #08090d;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1f293d;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00f3ff;
+        }
+    </style>
+</head>
+<body class="relative min-h-screen text-gray-200 selection:bg-neonCyan selection:text-black">
+
+    <!-- Ambient RGB Background Blobs -->
+    <div class="rgb-blob w-96 h-96 bg-cyan-500 top-10 right-10"></div>
+    <div class="rgb-blob w-96 h-96 bg-purple-600 top-1/3 left-10 animation-delay-2000"></div>
+    <div class="rgb-blob w-96 h-96 bg-pink-600 bottom-20 right-1/4 animation-delay-4000"></div>
+
+    <header class="sticky top-0 z-40 glass-panel border-b border-gray-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-purple-500 to-pink-500 flex items-center justify-center text-black font-black text-xl shadow-glow-cyan">
+                    <i class="fa-solid font-bold fa-computer-mouse"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-wider text-white">Gamoptic<span class="rgb-text">.Mouse</span></span>
+                    <p class="text-xs text-gray-400 hidden sm:block">مرجع تخصصی و مقایسه انواع موس‌های گیمینگ</p>
+                </div>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#categories" class="hover:text-neonCyan transition-colors">دسته‌بندی‌ها</a>
+                <a href="#mice-grid" class="hover:text-neonCyan transition-colors">لیست موس‌ها</a>
+                <a href="#mouse-quiz" class="hover:text-neonCyan transition-colors">راهنمای هوشمند</a>
+                <a href="#tech-specs" class="hover:text-neonCyan transition-colors">اصطلاحات فنی</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="#mouse-quiz" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-cyan-500 via-purple-600 to-pink-500 text-white shadow-lg hover:opacity-90 transition transform hover:scale-105 flex items-center gap-2">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>تست انتخاب موس</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative z-10 pt-12 pb-20 px-4 max-w-7xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border border-cyan-500/30 text-cyan-400 text-xs sm:text-sm font-semibold mb-6">
+            <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping"></span>
+            <span>خوش آمدید به Gamoptic.Mouse - بهترین موس‌های گیمینگ جهان</span>
+        </div>
+        
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+            سلاح واقعی خود را برای <span class="rgb-text">پیروزی در بازی‌ها</span> انتخاب کنید
+        </h1>
+        
+        <p class="text-gray-400 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed mb-10">
+            بررسی تخصصی، مقایسه ده‌ها فاکتور فنی و معرفی بهترین مدل‌های موس گیمینگ از برندهای مطرح دنیا 
+            (Razer, Logitech, SteelSeries, VXE, Finalmouse, Corsair) در دسته‌بندی‌های مختلف.
+        </p>
+
+        <!-- Quick Stats Bar -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12">
+            <div class="glass-panel p-4 rounded-2xl border border-gray-800">
+                <p class="text-2xl sm:text-3xl font-extrabold text-neonCyan">۱۵+</p>
+                <p class="text-xs text-gray-400 mt-1">مدل موس برتر پرچمدار</p>
+            </div>
+            <div class="glass-panel p-4 rounded-2xl border border-gray-800">
+                <p class="text-2xl sm:text-3xl font-extrabold text-neonPurple">۵</p>
+                <p class="text-xs text-gray-400 mt-1">دسته‌بندی تخصصی بازی</p>
+            </div>
+            <div class="glass-panel p-4 rounded-2xl border border-gray-800">
+                <p class="text-2xl sm:text-3xl font-extrabold text-neonPink">۳۰K+</p>
+                <p class="text-xs text-gray-400 mt-1">حداکثر دقت DPI سنسورها</p>
+            </div>
+            <div class="glass-panel p-4 rounded-2xl border border-gray-800">
+                <p class="text-2xl sm:text-3xl font-extrabold text-neonGreen">&lt; ۵۰g</p>
+                <p class="text-xs text-gray-400 mt-1">سبک‌ترین وزن‌های Esports</p>
+            </div>
+        </div>
+
+        <!-- Search & Filter Controls -->
+        <div class="glass-panel p-4 rounded-2xl max-w-3xl mx-auto border border-gray-700/50 shadow-2xl">
+            <div class="flex flex-col sm:flex-row items-center gap-3">
+                <div class="relative w-full">
+                    <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" id="searchInput" placeholder="جستجوی نام موس، برند (Razer, Logitech...) یا سنسور..." 
+                           class="w-full pl-4 pr-11 py-3 bg-gray-900/80 rounded-xl border border-gray-700 text-sm focus:outline-none focus:border-neonCyan text-white transition-all">
+                </div>
+                <button id="resetFilterBtn" class="w-full sm:w-auto px-6 py-3 bg-gray-800 hover:bg-gray-700 text-xs sm:text-sm font-semibold rounded-xl transition text-gray-300">
+                    بازنشانی
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="max-w-7xl mx-auto px-4 mb-10">
+        <div class="flex items-center justify-between mb-6">
+            <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-layer-group text-neonCyan"></i>
+                دسته‌بندی‌های تخصصی موس گیمینگ
+            </h2>
+            <span class="text-xs text-gray-400 hidden sm:inline">برای مشاهده، روی هر دسته کلیک کنید</span>
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-4 overflow-x-auto pb-4 scrollbar-none" id="categoryTabs">
+            <button data-cat="all" class="cat-tab active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all border border-cyan-500 bg-cyan-500/20 text-cyan-300 shadow-glow-cyan">
+                همه موس‌ها
+            </button>
+            <button data-cat="lightweight" class="cat-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/60 hover:border-purple-500 text-gray-300">
+                ⚡ سبک‌وزن (Ultra-Light Esports)
+            </button>
+            <button data-cat="wireless" class="cat-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/60 hover:border-purple-500 text-gray-300">
+                📡 بی‌سیم (Wireless Gaming)
+            </button>
+            <button data-cat="ergo" class="cat-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/60 hover:border-purple-500 text-gray-300">
+                🛡️ ارگونومیک (Ergonomic / Comfort)
+            </button>
+            <button data-cat="mmo" class="cat-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/60 hover:border-purple-500 text-gray-300">
+                🎮 مخصوص MMO / MOBA
+            </button>
+            <button data-cat="budget" class="cat-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/60 hover:border-purple-500 text-gray-300">
+                💎 اقتصادی / ارزنده (Best Budget)
+            </button>
+        </div>
+    </section>
+
+    <main id="mice-grid" class="max-w-7xl mx-auto px-4 pb-20">
+        <div id="miceContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- JavaScript will inject cards dynamically here -->
+        </div>
+
+        <div id="noResults" class="hidden text-center py-16 glass-panel rounded-3xl border border-gray-800">
+            <i class="fa-solid fa-ghost text-5xl text-gray-600 mb-4"></i>
+            <p class="text-xl font-bold text-gray-300">موسی با این مشخصات یافت نشد!</p>
+            <p class="text-sm text-gray-500 mt-2">عبارت دیگری را جستجو کنید یا فیلترها را بازنشانی نمایید.</p>
+        </div>
+    </main>
+
+    <section id="mouse-quiz" class="max-w-4xl mx-auto px-4 mb-24 relative z-10">
+        <div class="glass-panel p-6 sm:p-10 rounded-3xl border border-purple-500/30 relative overflow-hidden shadow-2xl">
+            <div class="absolute -left-10 -bottom-10 w-48 h-48 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="text-center mb-8">
+                <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs font-bold rounded-full border border-purple-500/30">ابزار هوشمند Gamoptic</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-white mt-2">راهنمای انتخاب موس مناسب شما</h2>
+                <p class="text-sm text-gray-400 mt-1">با پاسخ به ۳ سوال ساده، ایده‌آل‌ترین موس مناسب دست و سبک بازی‌‌تان را پیدا کنید.</p>
+            </div>
+
+            <div id="quizContainer">
+                <!-- Step 1 -->
+                <div class="quiz-step block" id="step1">
+                    <h3 class="text-base font-bold text-cyan-400 mb-4 flex items-center gap-2">
+                        <span>۱.</span> سبک اصلی بازی شما چیست؟
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <button onclick="selectQuizOption('game', 'fps')" class="quiz-opt p-4 rounded-xl glass-card text-right hover:border-cyan-400 border border-gray-800">
+                            <i class="fa-solid fa-crosshair text-2xl text-cyan-400 mb-2"></i>
+                            <div class="font-bold text-sm text-white">شوتر و رقابتی (FPS)</div>
+                            <div class="text-xs text-gray-400 mt-1">CS2, Valorant, Apex</div>
+                        </button>
+                        <button onclick="selectQuizOption('game', 'mmo')" class="quiz-opt p-4 rounded-xl glass-card text-right hover:border-purple-400 border border-gray-800">
+                            <i class="fa-solid fa-dragon text-2xl text-purple-400 mb-2"></i>
+                            <div class="font-bold text-sm text-white">استراتژی و نقش‌آفرینی</div>
+                            <div class="text-xs text-gray-400 mt-1">WoW, Dota 2, LoL</div>
+                        </button>
+                        <button onclick="selectQuizOption('game', 'casual')" class="quiz-opt p-4 rounded-xl glass-card text-right hover:border-pink-400 border border-gray-800">
+                            <i class="fa-solid fa-gamepad text-2xl text-pink-400 mb-2"></i>
+                            <div class="font-bold text-sm text-white">ترکیبی / عمومی</div>
+                            <div class="text-xs text-gray-400 mt-1">کاربری روزمره و انواع بازی‌ها</div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="quiz-step hidden" id="step2">
+                    <h3 class="text-base font-bold text-cyan-400 mb-4 flex items-center gap-2">
+                        <span>۲.</span> ابعاد دست شما چگونه است؟
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <button onclick="selectQuizOption('hand', 'small')" class="quiz-opt p-4 rounded-xl glass-card text-right hover:border-cyan-400 border border-gray-800">
+                            <div class="font-bold text-sm text-white">دست کوچک تا متوسط</div>
+                            <div class="text-xs text-gray-400 mt-1">کمتر از ۱۷.۵ سانتی‌متر</div>
+                        </button>
+                        <button onclick="selectQuizOption('hand', 'medium')" class="quiz-opt p-4 rounded-xl glass-card text-right hover:border-purple-400 border border-gray-800">
+                            <div class="font-bold text-sm text-white">دست متوسط</div>
+                            <div class="text-xs text-gray-400 mt-1">بین ۱۷.۵ تا ۱۹.۵ سانتی‌متر</div>
+                        </button>
+                        <button onclick="selectQuizOption('hand', 'large')" class="quiz-opt p-4 rounded-xl glass-card text-right hover:border-pink-400 border border-gray-800">
+                            <div class="font-bold text-sm text-white">دست بزرگ</div>
+                            <div class="text-xs text-gray-400 mt-1">بیشتر از ۱۹.۵ سانتی‌متر</div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="quiz-step hidden" id="step3">
+                    <h3 class="text-base font-bold text-cyan-400 mb-4 flex items-center gap-2">
+                        <span>۳.</span> بودجه مد نظر شما در چه حدودی است؟
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <button onclick="selectQuizOption('budget', 'low')" class="quiz-opt p-4 rounded-xl glass-card text-right hover:border-cyan-400 border border-gray-800">
+                            <div class="font-bold text-sm text-white">اقتصادی</div>
+                            <div class="text-xs text-gray-400 mt-1">بهترین ارزش در برابر قیمت</div>
+                        </button>
+                        <button onclick="selectQuizOption('budget', 'mid')" class="quiz-opt p-4 rounded-xl glass-card text-right hover:border-purple-400 border border-gray-800">
+                            <div class="font-bold text-sm text-white">میان‌رده عالی</div>
+                            <div class="text-xs text-gray-400 mt-1">توازن امکانات و قیمت</div>
+                        </button>
+                        <button onclick="selectQuizOption('budget', 'high')" class="quiz-opt p-4 rounded-xl glass-card text-right hover:border-pink-400 border border-gray-800">
+                            <div class="font-bold text-sm text-white">پرچمدار بی‌محدودیت</div>
+                            <div class="text-xs text-gray-400 mt-1">بهترین تکنولوژی بدون محدودیت</div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quiz Result Block -->
+                <div id="quizResult" class="hidden text-center py-6">
+                    <div class="text-neonCyan text-sm font-bold mb-2">پیشنهاد اختصاصی Gamoptic برای شما:</div>
+                    <div id="recommendedMouseCard" class="max-w-md mx-auto"></div>
+                    <button onclick="resetQuiz()" class="mt-6 px-6 py-2 bg-gray-800 hover:bg-gray-700 text-xs text-gray-300 font-bold rounded-xl transition">
+                        تکرار مجدد تست
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-specs" class="max-w-7xl mx-auto px-4 pb-24">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-black text-white">راهنمای اصطلاحات فنی موس‌های گیمینگ</h2>
+            <p class="text-gray-400 text-sm mt-2">هنگام خرید موس گیمینگ این مفاهیم کلیدی را بشناسید</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-cyan-500/50 transition">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl font-bold mb-4">
+                    DPI
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">DPI / CPI (دقت سنسور)</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    نشان‌دهنده تعداد نقطه‌هایی است که سنسور موس با حرکت یک اینچی روی پد شناسایی می‌کند. DPI بالاتر لزوماً به معنی کیفیت بهتر نیست؛ اکثر گیمرهای حرفه‌ای روی 400 تا 1600 بازی می‌کنند.
+                </p>
+            </div>
+
+            <div class="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-purple-500/50 transition">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl font-bold mb-4">
+                    IPS
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">IPS (حداکثر سرعت)</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    مخفف Inches Per Second است. نشان می‌دهد موس با چه سرعتی می‌تواند روی پد جابجا شود بدون اینکه سنسور رد حرکت را گم کند. عدد بالاتر از ۴۰۰ IPS عالی است.
+                </p>
+            </div>
+
+            <div class="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-pink-500/50 transition">
+                <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-xl font-bold mb-4">
+                    Hz
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Polling Rate (نرخ بروزرسانی)</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    تعداد دفعاتی که موس موقعیت خود را در ثانیه به سیستم گزارش می‌دهد. نرخ استاندارد ۱۰۰۰ هرتز (۱ میلی‌ثانیه) است و موس‌های پرچمدار تا ۴۰۰۰ یا ۸۰۰۰ هرتز پشتیبانی می‌کنند.
+                </p>
+            </div>
+
+            <div class="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-green-500/50 transition">
+                <div class="w-12 h-12 rounded-xl bg-green-500/10 border border-green-500/30 flex items-center justify-center text-green-400 text-xl font-bold mb-4">
+                    <i class="fa-solid fa-toggle-on"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">سوئیچ اپتیکال vs مکانیکی</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    سوئیچ‌های اپتیکال از پرتو نور برای ثبت کلیک استفاده می‌کنند؛ تاخیر صفر دارند، کلیک دوگانه (Double Click) ایجاد نمی‌کنند و طول عمر به مراتب بیشتری دارند.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Modal -->
+    <div id="mouseModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden transition-opacity">
+        <div class="glass-panel max-w-2xl w-full rounded-3xl border border-cyan-500/30 overflow-hidden shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal()" class="absolute top-4 left-4 w-9 h-9 rounded-full bg-gray-800/80 hover:bg-red-500/80 text-white flex items-center justify-center transition z-20">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modalContent" class="p-6 sm:p-8">
+                <!-- Injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="glass-panel border-t border-gray-800 py-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <i class="fa-solid fa-computer-mouse text-neonCyan text-xl"></i>
+                <span class="text-lg font-black text-white">Gamoptic<span class="rgb-text">.Mouse</span></span>
+            </div>
+            <p class="text-xs text-gray-500 max-w-xl mx-auto mb-6">
+                مرجع آموزشی و راهنمای جامع انتخاب موس‌های گیمینگ. تمامی حقوق برندها متعلق به شرکت‌های مربوطه می‌باشد.
+            </p>
+            <div class="flex items-center justify-center gap-6 text-gray-400 text-sm">
+                <a href="#categories" class="hover:text-neonCyan transition">دسته‌بندی‌ها</a>
+                <a href="#mouse-quiz" class="hover:text-neonCyan transition">تست هوشمند</a>
+                <a href="#tech-specs" class="hover:text-neonCyan transition">اصطلاحات</a>
+            </div>
+            <p class="text-xs text-gray-600 mt-8">© ۲۰۲۶ Gamoptic.Mouse - تمامی حقوق محفوظ است</p>
+        </div>
+    </footer>
+
+    <script>
+        // Database of 15 Top Gaming Mice
+        const miceData = [
+            // Category 1: Lightweight
+            {
+                id: 'superlight2',
+                category: 'lightweight',
+                name: 'Logitech G PRO X Superlight 2',
+                brand: 'Logitech',
+                badge: 'پرچمدار eSports',
+                rating: 4.9,
+                reviews: 1280,
+                weight: '۶۰ گرم',
+                sensor: 'HERO 2 (32,000 DPI)',
+                connection: 'LIGHTSPEED Wireless / Type-C',
+                buttons: '۵ دکمه قابل برنامه‌ریزی',
+                switches: 'LIGHTFORCE Hybrid Optical-Mechanical',
+                polling: 'up to 4000 Hz',
+                priceTag: 'پرچمدار',
+                image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80',
+                highlights: ['وزن فوق‌‌العاده سبُک ۶۰ گرمی', 'سوئیچ‌های هیبریدی اپتیکال با طول عمر بالا', 'شارژدهی ۹۵ ساعته باتری'],
+                description: 'استاندارد طلایی مسابقات eSports جهان. این موس با سنسور خیره‌کننده HERO 2 و بدنه ارگونومیک متقارن، انتخابی بی‌نقص برای گیمرهای حرفه‌ای FPS است.'
+            },
+            {
+                id: 'razer-viper-v3-pro',
+                category: 'lightweight',
+                name: 'Razer Viper V3 Pro',
+                brand: 'Razer',
+                badge: 'سریع‌ترین سنسور جهان',
+                rating: 4.9,
+                reviews: 950,
+                weight: '۵۴ گرم',
+                sensor: 'Focus Pro 35K Optical Gen-2',
+                connection: 'Razer HyperSpeed Wireless',
+                buttons: '۵ دکمه',
+                switches: 'Razer Optical Switches Gen-3',
+                polling: 'Native 8000 Hz',
+                priceTag: 'پرچمدار',
+                image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=600&q=80',
+                highlights: ['وزن بی‌نظیر ۵۴ گرمی بدون سوراخ روی بدنه', 'نرخ پولینگ واقعی 8000Hz', 'سنسور پیشرفته ۳۵۰۰۰ DPI'],
+                description: 'طراحی شده با همکاری حرفه‌ای‌ترین بازیکنان CS2 و Valorant. Viper V3 Pro تعریف تازه‌ای از سرعت و دقت عملکرد ارائه می‌دهد.'
+            },
+            {
+                id: 'finalmouse-ulx',
+                category: 'lightweight',
+                name: 'Finalmouse UltralightX',
+                brand: 'Finalmouse',
+                badge: 'سبک‌ترین در جهان',
+                rating: 4.7,
+                reviews: 420,
+                weight: '۳۱ - ۳۷ گرم',
+                sensor: 'PixArt PAW3395 Custom',
+                connection: '2.4GHz Wireless',
+                buttons: '۵ دکمه',
+                switches: 'Omron Mechanical',
+                polling: '4000 Hz',
+                priceTag: 'لوکس / خاص',
+                image: 'https://images.unsplash.com/photo-1629429408209-1f912961dbd8?auto=format&fit=crop&w=600&q=80',
+                highlights: ['بدنه ساخته شده از فیبر کربن کامپوزیت', 'وزن باورنکردنی حدود ۳۵ گرم', 'طراحی شاسی فضایی'],
+                description: 'شاهکار مهندسی با شاسی فیبر کربنی. برای گیمرهایی که به دنبال سبک‌ترین موس ممکن بدون کوچک‌ترین انحراف در ساختار هستند.'
+            },
+
+            // Category 2: Wireless
+            {
+                id: 'razer-basilisk-v3-pro',
+                category: 'wireless',
+                name: 'Razer Basilisk V3 Pro',
+                brand: 'Razer',
+                badge: 'کامل‌ترین موس بی‌سیم',
+                rating: 4.8,
+                reviews: 1100,
+                weight: '۱۱۲ گرم',
+                sensor: 'Focus Pro 30K',
+                connection: 'HyperSpeed Wireless / Bluetooth / Type-C',
+                buttons: '۱۱ دکمه قابل برنامه‌ریزی',
+                switches: 'Optical Mouse Switches Gen-3',
+                polling: '1000 Hz (Upgradable to 4000Hz)',
+                priceTag: 'پرچمدار',
+                image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80',
+                highlights: ['اسکرول هوشمند HyperScroll Tilt Wheel', '۱۳ منطقه نورپردازی RGB Chroma', 'شارژ بی‌سیم Qi (با پایه مجزا)'],
+                description: 'پادشاه موس‌های همه‌کاره گیمینگ و تولید محتوا. با اسکرول آزاد فوق‌العاده و دکمه‌های متعدد، انتخابی ایده‌آل برای بازی‌های متنوع است.'
+            },
+            {
+                id: 'logitech-g502-x-plus',
+                category: 'wireless',
+                name: 'Logitech G502 X PLUS',
+                brand: 'Logitech',
+                badge: 'محبوب‌ترین اسطوره',
+                rating: 4.8,
+                reviews: 2100,
+                weight: '۱۰۶ گرم',
+                sensor: 'HERO 25K',
+                connection: 'LIGHTSPEED Wireless',
+                buttons: '۱۳ دکمه سفارشی',
+                switches: 'LIGHTFORCE Hybrid',
+                polling: '1000 Hz',
+                priceTag: 'پرچمدار',
+                image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=600&q=80',
+                highlights: ['تکامل بازطراحی شده افسانه G502', 'نورپردازی ۸ ال‌ای‌دی RGB متحرک', 'کلید تغییر DPI قابل تعویض'],
+                description: 'نسخه به‌روز شده ارزشمندترین موس تاریخ گیمینگ با سوئیچ‌های هیبریدی جدید و اتصال بسیار پایدار لاجیتک.'
+            },
+            {
+                id: 'steelseries-aerox-5-wireless',
+                category: 'wireless',
+                name: 'SteelSeries Aerox 5 Wireless',
+                brand: 'SteelSeries',
+                badge: 'بی‌سیم سبک‌وزن',
+                rating: 4.6,
+                reviews: 580,
+                weight: '۷۴ گرم',
+                sensor: 'TrueMove Air',
+                connection: '2.4GHz Quantum 2.0 / Bluetooth 5.0',
+                buttons: '۹ دکمه قابل تنظیم',
+                switches: 'Golden Micro IP54 Dustproof',
+                polling: '1000 Hz',
+                priceTag: 'میان‌رده عالی',
+                image: 'https://images.unsplash.com/photo-1629429408209-1f912961dbd8?auto=format&fit=crop&w=600&q=80',
+                highlights: ['استاندارد مقاومتی IP54 در برابر آب و گردوغبار', 'شارژدهی ۱۸۰ ساعته', 'طراحی مشبک لانه زنبوری RGB'],
+                description: 'ترکیبی عالی از سرعت، وزن سبک و تعداد دکمه‌های کاربردی برای بازی‌های اکشن و بتل رویال.'
+            },
+
+            // Category 3: Ergonomic
+            {
+                id: 'razer-deathadder-v3-pro',
+                category: 'ergo',
+                name: 'Razer DeathAdder V3 Pro',
+                brand: 'Razer',
+                badge: 'برترین ارگونومیک دنیا',
+                rating: 4.9,
+                reviews: 1420,
+                weight: '۶۳ گرم',
+                sensor: 'Focus Pro 30K Optical',
+                connection: 'HyperSpeed Wireless',
+                buttons: '۵ دکمه اصلی',
+                switches: 'Optical Gen-3',
+                polling: 'up to 8000 Hz',
+                priceTag: 'پرچمدار',
+                image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80',
+                highlights: ['فرم ارگونومیک خستگی‌ناپذیر راست‌دست', 'وزن باورنکردنی ۶۳ گرمی', 'بافت بدنه بسیار لطیف و محکم'],
+                description: 'سری DeathAdder با فروش بیش از ۱۵ میلیون نسخه، محبوب‌ترین شکل ارگونومیک دنیا را داراست و نسخه V3 Pro اوج این تکامل است.'
+            },
+            {
+                id: 'zowie-ec2-cw',
+                category: 'ergo',
+                name: 'Zowie EC2-CW Wireless',
+                brand: 'Zowie',
+                badge: 'انتخاب پرو پلیرها',
+                rating: 4.7,
+                reviews: 390,
+                weight: '۷۷ گرم',
+                sensor: '3370 Optical Sensor',
+                connection: 'Wireless با ایستگاه پایه آنتن اختصاصی',
+                buttons: '۵ دکمه',
+                switches: 'Huano 20M Mechanical',
+                polling: '1000 Hz Driverless',
+                priceTag: 'پرچمدار Esports',
+                image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=600&q=80',
+                highlights: ['ایستگاه گیرنده اختصاصی با ضریب اطمینان ۱۰۰٪', 'بدون نیاز به هیچ نرم‌افزار جانبی', 'ارگونومی مطلق برای سبک Gripهای مختلف'],
+                description: 'طراحی شده توسط کمپانی زووی صرفاً برای مسابقات رسمی استیج. پایداری سیگنال فرکانسی این موس نفوذناپذیر است.'
+            },
+            {
+                id: 'corsair-nightsword-rgb',
+                category: 'ergo',
+                name: 'Corsair Nightsword RGB',
+                brand: 'Corsair',
+                badge: 'سیستم وزن هوشمند',
+                rating: 4.5,
+                reviews: 670,
+                weight: '۱۱۹ تا ۱۴۱ گرم (قابل تنظیم)',
+                sensor: 'PixArt PMW3391',
+                connection: 'سیمی (Cable)',
+                buttons: '۱۰ دکمه',
+                switches: 'Omron 50M',
+                polling: '1000 Hz',
+                priceTag: 'میان‌رده',
+                image: 'https://images.unsplash.com/photo-1629429408209-1f912961dbd8?auto=format&fit=crop&w=600&q=80',
+                highlights: ['سنسور هوشمند تشخیص مرکز ثقل موس', 'دارای وزنه متغیر بر اساس گرانیگاه دست', 'تکیه‌گاه لاستیکی ضد تعریق شست'],
+                description: 'یک موس ارگونومیک با استراحت‌گاه شست بسیار راحت و سیستم هوشمند وزنه‌گذاری بر اساس ابعاد دست کاربر.'
+            },
+
+            // Category 4: MMO / MOBA
+            {
+                id: 'razer-naga-v2-pro',
+                category: 'mmo',
+                name: 'Razer Naga V2 Pro',
+                brand: 'Razer',
+                badge: 'فرمانروای MMO',
+                rating: 4.8,
+                reviews: 830,
+                weight: '۱۳۴ گرم',
+                sensor: 'Focus Pro 30K',
+                connection: 'HyperSpeed Wireless / Bluetooth',
+                buttons: 'تا ۲۰ دکمه قابل تنظیم (پانل‌های مغناطیسی تعویض‌شونده)',
+                switches: 'Optical Gen-3',
+                polling: '1000 Hz',
+                priceTag: 'پرچمدار',
+                image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80',
+                highlights: ['۳ صفحه کلید جانبی مغناطیسی (۱۲، ۶ و ۲ دکمه)', 'چرخ اسکرول هوشمند با ۶ حالت مقاومت کلیک', 'باتری ۱۵۰ ساعته در حالت بلوتوث'],
+                description: 'انعطاف‌پذیرترین موس جهان برای MMOها مثل World of Warcraft یا بازی‌های MOBA و کارهای تخصصی ویرایش.'
+            },
+            {
+                id: 'corsair-scimitar-elite-wireless',
+                category: 'mmo',
+                name: 'Corsair Scimitar Elite Wireless',
+                brand: 'Corsair',
+                badge: 'دکمه‌های کشویی ریلی',
+                rating: 4.7,
+                reviews: 510,
+                weight: '۱۲۴ گرم',
+                sensor: 'MARKSMAN 26,000 DPI',
+                connection: 'SLIPSTREAM Wireless / Bluetooth',
+                buttons: '۱۶ دکمه قابل برنامه‌ریزی',
+                switches: 'Optical Switches',
+                polling: '2000 Hz',
+                priceTag: 'پرچمدار',
+                image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=600&q=80',
+                highlights: ['سیستم ریلی Key Slider برای تنظیم موقعیت ۱۲ دکمه کناری', 'باتری ۱۵۰ ساعته', 'پشتیبانی کامل از ماکروهای پیچیده iCUE'],
+                description: 'با قابلیت جابجایی صفحه دکمه‌های کناری، می‌توانید بهترین موقعیت قرارگیری انگشت شست خود را تنظیم کنید.'
+            },
+            {
+                id: 'steelseries-aerox-9-wireless',
+                category: 'mmo',
+                name: 'SteelSeries Aerox 9 Wireless',
+                brand: 'SteelSeries',
+                badge: 'سبک‌ترین موس MMO',
+                rating: 4.6,
+                reviews: 340,
+                weight: '۸۹ گرم',
+                sensor: 'TrueMove Air',
+                connection: '2.4GHz / Bluetooth 5.0',
+                buttons: '۱۸ دکمه',
+                switches: 'Golden Micro IP54',
+                polling: '1000 Hz',
+                priceTag: 'پرچمدار',
+                image: 'https://images.unsplash.com/photo-1629429408209-1f912961dbd8?auto=format&fit=crop&w=600&q=80',
+                highlights: ['وزن بی‌‌نظیر ۸۹ گرم برای یک موس ۱۸ دکمه', 'مقاوم در برابر نفوذ گرد و غبار IP54', 'طراحی مشبک نئون RGB'],
+                description: 'تنها موس MMO سبک‌وزن دنیا که خستگی مچ دست را در کوئست‌ها و استریم‌های طولانی‌‌مدت صفر می‌کند.'
+            },
+
+            // Category 5: Budget
+            {
+                id: 'vxe-r1-pro',
+                category: 'budget',
+                name: 'VXE Dragonfly R1 Pro / Max',
+                brand: 'VXE',
+                badge: 'پدیده‌ی اقتصادی سال',
+                rating: 4.9,
+                reviews: 1850,
+                weight: '۴۸ گرم',
+                sensor: 'PixArt PAW3395 (26,000 DPI)',
+                connection: '2.4GHz Wireless / Type-C',
+                buttons: '۵ دکمه',
+                switches: 'Kailh Sword / Huano Pink Dot',
+                polling: 'up to 4000 Hz (با دانگل مجزا)',
+                priceTag: 'اقتصادی باورنکردنی',
+                image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80',
+                highlights: ['سنسور پرچمدار PAW3395 در قیمتی زیر ۵۰ دلار', 'وزن فوق‌العاده ۴۸ گرمی', 'کیفیت ساخت خیره‌کننده'],
+                description: 'قاتل موس‌های گران‌قیمت بازار! این موس با مشخصاتی دقیقاً مشابه پرچمداران ۱۵۰ دلاری با قیمتی باورنکردنی عرضه می‌شود.'
+            },
+            {
+                id: 'logitech-g305',
+                category: 'budget',
+                name: 'Logitech G305 LIGHTSPEED',
+                brand: 'Logitech',
+                badge: 'محبوب‌ترین اقتصادی بی‌سیم',
+                rating: 4.7,
+                reviews: 4500,
+                weight: '۹۹ گرم (با باتری قلمی)',
+                sensor: 'HERO 12K',
+                connection: 'LIGHTSPEED Wireless',
+                buttons: '۶ دکمه',
+                switches: 'Omron Mechanical',
+                polling: '1000 Hz',
+                priceTag: 'اقتصادی',
+                image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=600&q=80',
+                highlights: ['شارژدهی ۲۵۰ ساعته با یک باتری قلمی AA', 'تاخیر ورودی آپادانا زیر ۱ میلی‌ثانیه', 'دوام فنی فوق‌العاده بالا'],
+                description: 'پادشاه بی‌رقابت موس‌های گیمینگ بی‌سیم اقتصادی که سال‌هاست انتخاب اول گیمرهای باهوش است.'
+            },
+            {
+                id: 'razer-cobra',
+                category: 'budget',
+                name: 'Razer Cobra (سیمی)',
+                brand: 'Razer',
+                badge: 'ارزش خرید بالا',
+                rating: 4.6,
+                reviews: 890,
+                weight: '۵۸ گرم',
+                sensor: '8500 DPI Optical Sensor',
+                connection: 'کابل انطباق‌پذیر Speedflex',
+                buttons: '۶ دکمه',
+                switches: 'Razer Optical Switches Gen-3',
+                polling: '1000 Hz',
+                priceTag: 'اقتصادی',
+                image: 'https://images.unsplash.com/photo-1629429408209-1f912961dbd8?auto=format&fit=crop&w=600&q=80',
+                highlights: ['سوئیچ‌های اپتیکال نسوز ضد دابل کلیک', 'نورپردازی سفارشی Chroma RGB در زیر بدنه', 'کابل بسیار نرم سبک'],
+                description: 'جایگزین نوین سری محبوب Viper Mini. موسی بسیار سبک با سوئیچ‌های اپتیکال دوام بالا برای بودجه‌های محدود.'
+            }
+        ];
+
+        let currentCategory = 'all';
+        let quizAnswers = {};
+
+        // Render Mice Cards into DOM
+        function renderMice(data) {
+            const container = document.getElementById('miceContainer');
+            const noResults = document.getElementById('noResults');
+
+            if (data.length === 0) {
+                container.innerHTML = '';
+                noResults.classList.remove('hidden');
+                return;
+            }
+
+            noResults.classList.add('hidden');
+            
+            container.innerHTML = data.map(mouse => `
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group relative">
+                    <!-- Top Badge -->
+                    <div class="absolute top-3 right-3 z-10 flex items-center gap-2">
+                        <span class="px-2.5 py-1 text-[11px] font-bold rounded-lg bg-black/70 backdrop-blur-md text-neonCyan border border-cyan-500/30">
+                            ${mouse.badge}
+                        </span>
+                    </div>
+
+                    <div>
+                        <!-- Image Wrap -->
+                        <div class="relative h-48 sm:h-52 overflow-hidden bg-gradient-to-b from-gray-900/50 to-gray-900/90 flex items-center justify-center p-4">
+                            <img src="${mouse.image}" alt="${mouse.name}" 
+                                 class="max-h-full object-contain filter drop-shadow-[0_10px_15px_rgba(0,243,255,0.2)] group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/400x300/121624/00f3ff?text=${encodeURIComponent(mouse.brand)}'">
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-xs text-gray-400 mb-1">
+                                <span class="font-bold text-purple-400">${mouse.brand}</span>
+                                <div class="flex items-center gap-1 text-amber-400 font-bold">
+                                    <i class="fa-solid fa-star text-xs"></i>
+                                    <span>${mouse.rating}</span>
+                                    <span class="text-gray-500 text-[10px]">(${mouse.reviews})</span>
+                                </div>
+                            </div>
+
+                            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-neonCyan transition-colors">
+                                ${mouse.name}
+                            </h3>
+
+                            <!-- Specs Chips -->
+                            <div class="grid grid-cols-2 gap-2 text-[11px] mb-4">
+                                <div class="bg-gray-900/60 p-2 rounded-lg border border-gray-800 flex items-center gap-1.5 text-gray-300">
+                                    <i class="fa-solid fa-weight-hanging text-neonCyan"></i>
+                                    <span>وزن: <strong>${mouse.weight}</strong></span>
+                                </div>
+                                <div class="bg-gray-900/60 p-2 rounded-lg border border-gray-800 flex items-center gap-1.5 text-gray-300">
+                                    <i class="fa-solid fa-microchip text-neonPurple"></i>
+                                    <span class="truncate">${mouse.sensor}</span>
+                                </div>
+                                <div class="bg-gray-900/60 p-2 rounded-lg border border-gray-800 flex items-center gap-1.5 text-gray-300">
+                                    <i class="fa-solid fa-wifi text-neonPink"></i>
+                                    <span class="truncate">${mouse.connection}</span>
+                                </div>
+                                <div class="bg-gray-900/60 p-2 rounded-lg border border-gray-800 flex items-center gap-1.5 text-gray-300">
+                                    <i class="fa-solid fa-gamepad text-neonGreen"></i>
+                                    <span>${mouse.buttons}</span>
+                                </div>
+                            </div>
+
+                            <!-- Highlights -->
+                            <ul class="space-y-1.5 mb-5 text-xs text-gray-400">
+                                ${mouse.highlights.map(h => `
+                                    <li class="flex items-start gap-1.5">
+                                        <i class="fa-solid fa-check text-neonCyan text-[10px] mt-1"></i>
+                                        <span>${h}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer Action -->
+                    <div class="px-5 pb-5">
+                        <button onclick="openModal('${mouse.id}')" 
+                                class="w-full py-2.5 rounded-xl bg-gray-800 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-600 hover:text-white text-gray-200 text-xs font-bold transition duration-300 flex items-center justify-center gap-2 border border-gray-700">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>مشاهده مشخصات کامل و نقد</span>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Filter Logic
+        function filterMice() {
+            const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
+            
+            const filtered = miceData.filter(mouse => {
+                const matchesCat = (currentCategory === 'all') || (mouse.category === currentCategory);
+                const matchesSearch = mouse.name.toLowerCase().includes(searchTerm) || 
+                                      mouse.brand.toLowerCase().includes(searchTerm) ||
+                                      mouse.sensor.toLowerCase().includes(searchTerm);
+                return matchesCat && matchesSearch;
+            });
+
+            renderMice(filtered);
+        }
+
+        document.getElementById('categoryTabs').addEventListener('click', (e) => {
+            const btn = e.target.closest('.cat-tab');
+            if (!btn) return;
+
+            document.querySelectorAll('.cat-tab').forEach(t => {
+                t.classList.remove('active', 'border-cyan-500', 'bg-cyan-500/20', 'text-cyan-300', 'shadow-glow-cyan');
+                t.classList.add('border-gray-800', 'bg-gray-900/60', 'text-gray-300');
+            });
+
+            btn.classList.remove('border-gray-800', 'bg-gray-900/60', 'text-gray-300');
+            btn.classList.add('active', 'border-cyan-500', 'bg-cyan-500/20', 'text-cyan-300', 'shadow-glow-cyan');
+
+            currentCategory = btn.dataset.cat;
+            filterMice();
+        });
+
+        document.getElementById('searchInput').addEventListener('input', filterMice);
+
+        document.getElementById('resetFilterBtn').addEventListener('click', () => {
+            document.getElementById('searchInput').value = '';
+            currentCategory = 'all';
+            document.querySelector('[data-cat="all"]').click();
+        });
+
+        function openModal(mouseId) {
+            const mouse = miceData.find(m => m.id === mouseId);
+            if (!mouse) return;
+
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/2 flex items-center justify-center bg-gray-900/80 rounded-2xl p-4 border border-gray-800">
+                        <img src="${mouse.image}" alt="${mouse.name}" class="max-h-64 object-contain filter drop-shadow-[0_10px_20px_rgba(0,243,255,0.3)]">
+                    </div>
+                    <div class="md:w-1/2">
+                        <span class="text-xs font-bold text-neonCyan">${mouse.brand}</span>
+                        <h2 class="text-xl sm:text-2xl font-black text-white mt-1 mb-2">${mouse.name}</h2>
+                        
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="flex items-center text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="font-bold mr-1">${mouse.rating}</span>
+                            </div>
+                            <span class="text-xs text-gray-500">| ${mouse.reviews} دیدگاه ثبت شده</span>
+                            <span class="text-xs px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/30">${mouse.priceTag}</span>
+                        </div>
+
+                        <p class="text-xs text-gray-300 leading-relaxed mb-4">${mouse.description}</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 border-t border-gray-800 pt-6">
+                    <h4 class="text-sm font-bold text-white mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-sliders text-neonPurple"></i>
+                        مشخصات کامل سخت‌افزاری
+                    </h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
+                        <div class="bg-gray-900/80 p-3 rounded-xl border border-gray-800">
+                            <span class="text-gray-500 block mb-1">وزن بدنه:</span>
+                            <span class="font-bold text-white">${mouse.weight}</span>
+                        </div>
+                        <div class="bg-gray-900/80 p-3 rounded-xl border border-gray-800">
+                            <span class="text-gray-500 block mb-1">مدل سنسور:</span>
+                            <span class="font-bold text-white">${mouse.sensor}</span>
+                        </div>
+                        <div class="bg-gray-900/80 p-3 rounded-xl border border-gray-800">
+                            <span class="text-gray-500 block mb-1">نوع اتصال:</span>
+                            <span class="font-bold text-white">${mouse.connection}</span>
+                        </div>
+                        <div class="bg-gray-900/80 p-3 rounded-xl border border-gray-800">
+                            <span class="text-gray-500 block mb-1">تعداد دکمه‌ها:</span>
+                            <span class="font-bold text-white">${mouse.buttons}</span>
+                        </div>
+                        <div class="bg-gray-900/80 p-3 rounded-xl border border-gray-800">
+                            <span class="text-gray-500 block mb-1">نوع سوئیچ‌ها:</span>
+                            <span class="font-bold text-white">${mouse.switches}</span>
+                        </div>
+                        <div class="bg-gray-900/80 p-3 rounded-xl border border-gray-800">
+                            <span class="text-gray-500 block mb-1">نرخ گزارش (Polling):</span>
+                            <span class="font-bold text-white">${mouse.polling}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            const modal = document.getElementById('mouseModal');
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('mouseModal').classList.add('hidden');
+        }
+
+        function selectQuizOption(question, val) {
+            quizAnswers[question] = val;
+
+            if (question === 'game') {
+                document.getElementById('step1').classList.add('hidden');
+                document.getElementById('step2').classList.remove('hidden');
+            } else if (question === 'hand') {
+                document.getElementById('step2').classList.add('hidden');
+                document.getElementById('step3').classList.remove('hidden');
+            } else if (question === 'budget') {
+                document.getElementById('step3').classList.add('hidden');
+                calculateQuizResult();
+            }
+        }
+
+        function calculateQuizResult() {
+            let recommendedId = 'superlight2';
+
+            if (quizAnswers.budget === 'low') {
+                recommendedId = (quizAnswers.game === 'mmo') ? 'razer-cobra' : 'vxe-r1-pro';
+            } else if (quizAnswers.game === 'mmo') {
+                recommendedId = 'razer-naga-v2-pro';
+            } else if (quizAnswers.hand === 'large' || quizAnswers.game === 'casual') {
+                recommendedId = 'razer-basilisk-v3-pro';
+            } else if (quizAnswers.game === 'fps') {
+                recommendedId = (quizAnswers.hand === 'small') ? 'finalmouse-ulx' : 'razer-viper-v3-pro';
+            }
+
+            const recommended = miceData.find(m => m.id === recommendedId) || miceData[0];
+
+            const card = `
+                <div class="glass-card p-4 rounded-2xl border border-cyan-500/50 text-right">
+                    <img src="${recommended.image}" class="h-36 mx-auto object-contain mb-3">
+                    <span class="text-xs text-neonCyan font-bold">${recommended.brand}</span>
+                    <h3 class="text-lg font-black text-white">${recommended.name}</h3>
+                    <p class="text-xs text-gray-400 mt-1">${recommended.description}</p>
+                    <button onclick="openModal('${recommended.id}')" class="mt-4 w-full py-2 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-bold text-xs rounded-xl">
+                        مشخصات دقیق این موس
+                    </button>
+                </div>
+            `;
+
+            document.getElementById('recommendedMouseCard').innerHTML = card;
+            document.getElementById('quizResult').classList.remove('hidden');
+        }
+
+        function resetQuiz() {
+            quizAnswers = {};
+            document.getElementById('quizResult').classList.add('hidden');
+            document.getElementById('step1').classList.remove('hidden');
+        }
+
+        // Initialize page with all mice
+        window.onload = function() {
+            renderMice(miceData);
+        };
+    </script>
+</body>
+</html>
